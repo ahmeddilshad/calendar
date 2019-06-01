@@ -1,33 +1,64 @@
-.App {
-  text-align: center;
+.calendar-main {
+  padding: 0 20% 0 20%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.calendar {
+  padding: 10px;
+  border: 4px solid;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  border: 2px solid;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bolder;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table, th, td {
+  border: 2px solid black;
+  border-top: none;
+}
+
+th {
+  background-color: lightgray;
+  font-size: 22px;
+}
+
+table td {
+  height: auto;
+  width: 100px;
+  position: relative;
+}
+
+.day-details {
+  position: relative;
+}
+
+.date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 30px;
+}
+
+.event {
+  height: 20px;
+  border: 0.5px solid;
+  margin-bottom: 5px;
+}
+
+.events-list {
+  border: 1px solid;
+  padding: 4px;
+  max-height: 100px;
+  overflow: scroll;
+  max-width: 60%;
 }
